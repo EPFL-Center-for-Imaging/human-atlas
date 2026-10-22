@@ -57,7 +57,7 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
  .view-controls button{width:44px;height:44px;flex-shrink:0}.view-controls i{width:1px;height:28px;margin:8px 4px}
  .bottom-dock{left:12px;right:12px;width:auto;transform:none;max-width:520px;margin-inline:auto}
  .dock-layers,.dock-reset{min-width:44px;min-height:48px}.dock-reset{padding-left:8px}.dock-layers{padding-right:8px}
- .explode-control [data-slot=slider]{padding-block:13px}.explode-control [data-slot=slider-thumb]::after{inset:-14px}
+ .explode-control [data-slot=slider]{padding-block:13px}.explode-control [data-slot=slider-thumb]::after{inset:-14px}.explode-control [data-slot=slider-track]{background:#18253633}
  .layer-presets button{min-height:44px;height:44px}.panel-foot button{min-height:44px;min-width:48px}
  .system-row [data-slot=switch]::after{inset:-13px -6px}
  .search-panel{top:max(108px,calc(env(safe-area-inset-top) + 90px))}.search-panel input{font-size:16px}

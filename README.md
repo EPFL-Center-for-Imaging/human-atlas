@@ -18,6 +18,7 @@ An interactive 3D anatomy explorer built with React, Three.js, and shadcn/ui. Ta
 Requires Node.js 22.13 or newer. No API keys or accounts are needed.
 
 ```sh
+nvm use 24
 npm ci
 npm run dev
 ```
