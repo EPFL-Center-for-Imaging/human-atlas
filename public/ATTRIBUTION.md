@@ -11,7 +11,7 @@ BodyParts3D, © The Database Center for Life Science licensed under CC Attributi
 
 Adaptations: axes and units converted from millimeters/Z-up to meters/Y-up; translated to rest at the stage; geometry simplified using meshoptimizer with 0.2% relative error limit per structure; normals quantized to signed 16-bit; packed into binary chunks; curated display system groupings and colors. The source contains 2,234 individual OBJ meshes; all remain represented. The combined hierarchy contains 3,432 named FMA concepts, which may reference multiple meshes. Original source identity is preserved in the manifest.
 
-French translation: `models/names.fr.json` adds French names for 458 of the named concepts, keyed by FMA identifier, with left/right and ordinal variants derived from those names. Concepts without a translation keep their English name, which remains available in the interface. The geometry and identifiers are unchanged. Translation adapted by the Human Atlas project.
+French translation: `models/names.fr.json` adds French names for all 3,432 named concepts, keyed by FMA identifier, using traditional French anatomical names where they exist. English names remain available as search aliases. The geometry and identifiers are unchanged. Translation adapted by the Human Atlas project.
 
 Source OBJ comments mention an older CC BY-SA 2.1 Japan license. The official current database license linked above supersedes that legacy text and explicitly permits redistribution and adaptation under CC BY 4.0.
 

@@ -1,7 +1,7 @@
 import type {Atlas,Concept} from './anatomy';
 type Tool={name:string;description:string;inputSchema:object;annotations:{readOnlyHint:boolean};execute:(input:unknown)=>unknown};
 /** Accent-insensitive key used for matching: 'Cœur' and 'coeur' both become 'coeur'. */
-export function searchKey(text:string){return text.normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/œ/g,'oe').replace(/æ/g,'ae').toLowerCase().trim();}
+export function searchKey(text:string){return text.normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/œ/g,'oe').replace(/æ/g,'ae').replace(/[’‘]/g,"'").toLowerCase().trim();}
 /** Matches French names, English aliases and source identifiers, so 'fémur', 'femur' and an FMA identifier all find the same structure. */
 export function matchConcepts(concepts:Concept[],query:string){const term=searchKey(query);return concepts.filter(c=>searchKey(c.name).includes(term)||(c.en!==undefined&&searchKey(c.en).includes(term))||c.id.toLowerCase().includes(term));}
 function record(input:unknown):Record<string,unknown>{if(!input||typeof input!=='object'||Array.isArray(input))throw new Error('Expected an object.');return input as Record<string,unknown>;}
